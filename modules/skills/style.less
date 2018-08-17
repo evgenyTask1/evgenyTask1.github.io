@@ -1,27 +1,32 @@
 .quantity {
-    list-style: none;
     display: flex;
     flex-direction: raw;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-top: 5px;
 
     &__item {
-        position: relative;
-        font-size: 1;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 3px;
+        margin-left: 3px;
+        box-sizing: border-box;
+        width: calc(8.33% - 6px);
+        @media (max-width: 1200px) {
+            width: calc(16.66% - 6px);
+        }
+        @media (max-width: 800px) {
+            width: calc(25% - 6px);
+        }
         &::before {
             content: " ";
-            width: 25px;
-            height: 25px;
+            display: block;
+            padding-top: 100%;
             background-color: rgb(61, 108, 176);
             border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: -2px;
+            margin-bottom: 5px;
         }
+
         &-disabled::before {
             background-color: rgb(230, 230, 230);
         }
@@ -31,4 +36,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2px;
 }

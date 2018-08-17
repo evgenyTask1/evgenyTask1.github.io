@@ -3,20 +3,35 @@
     padding: 0
 }
 .cv {
-    max-width: 1240px; /*2480 */
+    max-width: 1400px; 
     margin: 0 auto;
 }
 .content {
     background-color: #fff;
     display: flex;
     flex-direction: raw;
-    padding-left: 5%;
-    padding-right: 6.5%;
-    padding-top: 80px; /*190 2480 */
-    padding-bottom: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+    @media (max-width: 900px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+    } 
     &__left {
-        width: 34%;
-        margin-right: 7%;
+        width: 41%;
+        @media (max-width: 900px) {
+            width: calc(100%);
+        } 
+    }
+    &__right {
+        width: 51%;
+        @media (max-width: 900px) {
+            width: calc(100%);
+        } 
     }
 }
 .col {

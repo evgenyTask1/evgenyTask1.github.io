@@ -1,7 +1,26 @@
 mixin setGrade(grade)
-    div.software__scale= 1
-.col__software.software
-    .software__left.softCol
-        .softCol__technology Photoshop
-    .software__right.softCol
-        .softCol__technology Photoshop
+    - var str = "width: " + grade + "%"
+    .software__scale
+    .software__scale.software__scale-explored(style=str)
+
+.col__software Software
+    .software
+        .software__left.softCol
+            .softCol__technology Photoshop
+            +setGrade(33)
+
+            .softCol__technology JavaScript
+            +setGrade(70)
+
+            .softCol__technology Vue
+            +setGrade(20)
+
+        .software__right.softCol
+            .softCol__technology C#
+            +setGrade(75)
+
+            .softCol__technology MS Paint
+            +setGrade(95)
+
+            .softCol__technology Html5 & CSS3
+            +setGrade(90)

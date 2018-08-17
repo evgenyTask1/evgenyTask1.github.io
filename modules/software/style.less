@@ -1,10 +1,17 @@
 .software {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -30px;
+    margin-right: -30px;
     &__scale {
-
+        background-color: rgb(230, 230, 230);
+        height: 20px;
+        width: 100%;
+        &-explored {
+            background-color: rgb(61, 108, 176);
+            margin-top: -20px;
+        }
     }
 }
 .softCol {
@@ -12,7 +19,10 @@
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(50% - 20px); /* with more elements it goes from 20 to 40px(2*margin) */
+    margin-left: 30px;
+    margin-right: 30px;
+    width: calc(50% - 60px); 
+    @media /*(min-width: 901px) and */ (max-width: 1100px) {
+        width: calc(100% - 60px);
+    } 
 }

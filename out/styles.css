@@ -97,7 +97,7 @@
   padding: 0;
 }
 .cv {
-  max-width: 1200px;
+  max-width: 1240px;
   /*2480 */
   margin: 0 auto;
 }
@@ -112,8 +112,9 @@
           flex-direction: raw;
   padding-left: 5%;
   padding-right: 6.5%;
-  padding-top: 150px;
+  padding-top: 80px;
   /*190 2480 */
+  padding-bottom: 80px;
 }
 .content__left {
   width: 34%;

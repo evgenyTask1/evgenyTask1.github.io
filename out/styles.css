@@ -10,6 +10,31 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.cvInfo__avatar {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -90%;
+  margin-bottom: 40px;
+}
+.cvInfo__avatar::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #3d6cb0;
+}
+.cvInfo__outline {
+  width: 50%;
+}
+.cvInfo__outline::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #3d6cb0;
+}
 .cvContact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +97,8 @@
   padding: 0;
 }
 .cv {
-  max-width: 2480px;
+  max-width: 1200px;
+  /*2480 */
   margin: 0 auto;
 }
 .content {

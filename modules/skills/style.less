@@ -1,0 +1,34 @@
+.quantity {
+    list-style: none;
+    display: flex;
+    flex-direction: raw;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &__item {
+        position: relative;
+        font-size: 1;
+        margin-right: 10px;
+        margin-left: 10px;
+        &::before {
+            content: " ";
+            width: 25px;
+            height: 25px;
+            background-color: rgb(61, 108, 176);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -2px;
+        }
+        &-disabled::before {
+            background-color: rgb(230, 230, 230);
+        }
+    }
+}
+.skills__skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

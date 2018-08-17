@@ -2,16 +2,21 @@ mixin setQuantity(val)
     - var maxQuanity = 12
     - for(var i = 0; i < maxQuanity; i++)
         if(i < val)
-            li= 1
+            li.quantity__item= 1
         else
-            li= 0
+            li.quantity__item.quantity__item-disabled= 0
 
-.col__skills.skills
-    .skills__skill Creative
-        +setQuantity(9)
-    .skills__skill Teamwork
-        +setQuantity(11)
-    .skills__skill Innovate
-        +setQuantity(6)
-    .skills__skill Communication
-        +setQuantity(11)
+.col__skills Skills
+    .skills
+        .skills__skill Creative
+            ul.skills__quantity.quantity
+               +setQuantity(9)
+        .skills__skill Teamwork
+            ul.skills__quantity.quantity
+               +setQuantity(11)
+        .skills__skill Innovate
+            ul.skills__quantity.quantity
+               +setQuantity(7)
+        .skills__skill Communication
+            ul.skills__quantity.quantity
+                +setQuantity(11)

@@ -3,6 +3,26 @@
     margin: 0;
     padding: 0
 }
+
+.infoTitle {
+    color: @blue;
+    text-transform: uppercase;
+}
+
+.blockTitle {
+    .infoTitle();
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__line {
+        height: 5px;
+        background-color: @blue;
+        flex-grow: 1;
+        margin-left: 12px;
+    }
+}
+
+
 .cv {
     max-width: 1400px; 
     margin: 0 auto;

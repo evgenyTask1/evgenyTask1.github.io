@@ -1,3 +1,46 @@
+/* --Project Variables --*/
 @mainColor: #fff;
+@dark: #000;
 @blue: rgb(61, 108, 176); // (61, 108, 176);
 @grey: rgb(230, 230, 230);
+
+/* ___________________________________________________________ */
+
+/* --Project Mixins and common styles --*/
+
+.infoTitle {
+    color: @blue;
+    text-transform: uppercase;
+}
+
+.blockTitle {
+    .infoTitle();
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__line {
+        height: 5px;
+        background-color: @blue;
+        flex-grow: 1;
+        margin-left: 12px;
+    }
+}
+
+.education__signed {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: flex-start;
+    &::before {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        flex-shrink: 0;
+        background-color: @dark;
+        border-radius: 50%;
+        position: relative;
+        top: 3px;
+    }
+}

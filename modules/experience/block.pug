@@ -1,33 +1,15 @@
+include ../projectShare/mixins
 .col__experience.experience
-    include ../projectShare/mixins
     +setTitle("out/experience/img/icon.png", "Experience")
 
-    .experience__signed
-        .experience__content
-            .experience__brief.companyExp
-                .companyExp__name Company name
-                .companyExp__date // Feb 2011 - Jun 2014
-            .experience__title Your job here
-            .experience__details Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                |Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
-                |eveniet consequatur, aliquam doloremque ex vitae iure, consectetur
+    +createInfoBlog("Company #1", "// Feb 2011 - Jun 2014", "Job title #1", `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
+veniet consequatur, aliquam doloremque ex vitae iure, consectetur`)
 
-    .experience__signed
-        .experience__content
-            .experience__brief.companyExp
-                .companyExp__name Company name
-                .companyExp__date // Feb 2011 - Jun 2014
-            .experience__title Your job here
-            .experience__details Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                |Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
-                |eveniet consequatur, aliquam doloremque ex vitae iure, consectetur 
-    
-    .experience__signed
-        .experience__content
-            .experience__brief.companyExp
-                .companyExp__name Company name
-                .companyExp__date // Feb 2011 - Jun 2014
-            .experience__title Your job here
-            .experience__details Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                |Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
-                |eveniet consequatur, aliquam doloremque ex vitae iure, consectetur 
+    +createInfoBlog("Company #2", "// Feb 2011 - Jun 2014", "Job title #2", `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
+veniet consequatur, aliquam doloremque ex vitae iure, consectetur`) 
+
+    +createInfoBlog("Company #3", "// Feb 2011 - Jun 2014", "Job title #3", `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Neque, itaque! Voluptatibus sapiente odio quibusdam saepe, ab quos 
+veniet consequatur, aliquam doloremque ex vitae iure, consectetur`)

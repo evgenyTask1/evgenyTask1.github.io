@@ -16,3 +16,12 @@ mixin setTitle(path, title)
         img.blockTitle__img(src=path)
         .blockTitle__header #{title}
         .blockTitle__line
+
+mixin createInfoBlog(blogHeader, date, blogTag, details, headerStyle)
+    .infoBlog
+        .infoBlog__content
+            .content__brief
+                div(class="infoBlog__header " + headerStyle) #{blogHeader}
+                .infoBlog__date #{date}
+            .content__tag #{blogTag}
+            .content__details #{details}

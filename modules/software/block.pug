@@ -1,13 +1,7 @@
-mixin setGrade(grade)
-    - var str = "width: " + grade + "%"
-    .software__scale
-    .software__scale.software__scale-explored(style=str)
-
+include ../projectShare/mixins
 .col__software
-    .blockTitle 
-        .blockTitle__img
-        .blockTitle__header Software
-        .blockTitle__line
+    include ../projectShare/mixins
+    +setTitle("out/software/img/icon.png", "Software")
     .software
         .software__left.softCol
             .softCol__technology Photoshop

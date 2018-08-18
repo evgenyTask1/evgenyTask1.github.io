@@ -1,8 +1,6 @@
 .col__contact
-    .blockTitle 
-        .blockTitle__img
-        .blockTitle__header Contact
-        .blockTitle__line
+    include ../projectShare/mixins
+    +setTitle("out/contact/img/icon.png", "Contact")
     .cvContact 
         .cvContact__attributes
             .cvContact__attribute.infoTitle Address

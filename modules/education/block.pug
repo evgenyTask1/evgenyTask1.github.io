@@ -1,8 +1,6 @@
 .col__education.education
-    .blockTitle 
-        .blockTitle__img
-        .blockTitle__header Education
-        .blockTitle__line
+    include ../projectShare/mixins
+    +setTitle("out/education/img/icon.png", "Education")
     .education__signed
         .education__content    
             .education__brief.graduate

@@ -7,10 +7,9 @@ import profile from "./profile/script.js";
 import skills from "./skills/script.js";
 import software from "./software/script.js";contact
 
-import baseStyle from "./base.less"
-import media from "./media.less"
+import common from "./root/import.js"
 
-let pugTemplate = require("./index.pug");
+let pugTemplate = require("./root/index.pug");
 document.querySelector("#pugTemplate").innerHTML = pugTemplate;
 
 console.log("Javascript entry point log");

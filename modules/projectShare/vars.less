@@ -7,17 +7,85 @@
 
 /* --Project Mixins and common styles --*/
 
-.largeText {
+.fontStage1 {
+    font-size: 21px;
+    color: @dark;
+}
+
+.fontStage2 {
+    font-size: 26px;
+    color: @dark;
+}
+
+.fontStage3 {
+    font-size: 41px;
+    color: @dark;
+}
+
+/* ___________________________________________________________ */
+
+.blueText {
+    color: @blue;
+}
+.boldText {
+    font-weight: bold;
+}
+.upperText {
     text-transform: uppercase;
 }
 
-.infoTitle {
-    .largeText();
-    color: @blue;
+/* ___________________________________________________________ */
+
+.mediumText {
+    .fontStage1();
+    .upperText();
 }
 
+.largeText {
+    .fontStage2();
+    .upperText();
+}
+.largerText {
+    .fontStage2();
+    .upperText();
+    .boldText();
+}
+
+.hugeText {
+    .fontStage3();
+    .upperText();
+}
+
+/* ___________________________________________________________ */
+
+.mediumBlue {
+    .mediumText();
+    .blueText();
+}
+
+.largeBlue {
+    .largeText();
+    .blueText();
+}
+
+.largerBlue {
+    .largeText();
+    .blueText();
+    .boldText();
+}
+
+
+.hugeBlue {
+    .hugeText();
+    .blueText();
+}
+
+/* ___________________________________________________________ */
+
+
 .blockTitle {
-    .infoTitle();
+    .hugeBlue();
+    .boldText();
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,9 +126,13 @@
     }
     &__tag {
         text-transform: uppercase;
+        margin-bottom: 10px;
     }
     &__details {
         margin-bottom: 10px;
+    }
+    &__brief {
+        margin-bottom: 7px;
     }
 }
 

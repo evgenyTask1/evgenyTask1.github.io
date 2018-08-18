@@ -1,16 +1,83 @@
 /* --Project Variables --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
+.fontStage1 {
+  font-size: 21px;
+  color: #000;
+}
+.fontStage2 {
+  font-size: 26px;
+  color: #000;
+}
+.fontStage3 {
+  font-size: 41px;
+  color: #000;
+}
+/* ___________________________________________________________ */
+.blueText {
+  color: #3d6cb0;
+}
+.boldText {
+  font-weight: bold;
+}
+.upperText {
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumText {
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
 .largeText {
+  font-size: 26px;
+  color: #000;
   text-transform: uppercase;
 }
-.infoTitle {
+.largerText {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hugeText {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumBlue {
+  font-size: 21px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
 }
+.largeBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.largerBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-weight: bold;
+}
+.hugeBlue {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+/* ___________________________________________________________ */
 .blockTitle {
+  font-size: 41px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,9 +135,13 @@
 }
 .infoBlog__tag {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .infoBlog__details {
   margin-bottom: 10px;
+}
+.infoBlog__brief {
+  margin-bottom: 7px;
 }
 .cvInfo {
   display: -webkit-box;
@@ -83,6 +154,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.cvInfo__name {
+  font-size: 52px;
+}
+.cvInfo__surname {
+  font-size: 61px;
+}
+.cvInfo__title {
+  font-size: 25px;
 }
 .cvInfo__avatar {
   width: 80%;
@@ -130,19 +210,89 @@
 .contactContainer__item:nth-child(2n) {
   width: calc(100% - 130px);
 }
+.cvProfile__importantTxt {
+  font-weight: bold;
+}
 /* --Project Variables --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
+.fontStage1 {
+  font-size: 21px;
+  color: #000;
+}
+.fontStage2 {
+  font-size: 26px;
+  color: #000;
+}
+.fontStage3 {
+  font-size: 41px;
+  color: #000;
+}
+/* ___________________________________________________________ */
+.blueText {
+  color: #3d6cb0;
+}
+.boldText {
+  font-weight: bold;
+}
+.upperText {
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumText {
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
 .largeText {
+  font-size: 26px;
+  color: #000;
   text-transform: uppercase;
 }
-.infoTitle {
+.largerText {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hugeText {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumBlue {
+  font-size: 21px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
 }
+.largeBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.largerBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-weight: bold;
+}
+.hugeBlue {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+/* ___________________________________________________________ */
 .blockTitle {
+  font-size: 41px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,9 +350,13 @@
 }
 .infoBlog__tag {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .infoBlog__details {
   margin-bottom: 10px;
+}
+.infoBlog__brief {
+  margin-bottom: 7px;
 }
 .quantity {
   display: -webkit-box;
@@ -255,16 +409,83 @@
 /* --Project Variables --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
+.fontStage1 {
+  font-size: 21px;
+  color: #000;
+}
+.fontStage2 {
+  font-size: 26px;
+  color: #000;
+}
+.fontStage3 {
+  font-size: 41px;
+  color: #000;
+}
+/* ___________________________________________________________ */
+.blueText {
+  color: #3d6cb0;
+}
+.boldText {
+  font-weight: bold;
+}
+.upperText {
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumText {
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
 .largeText {
+  font-size: 26px;
+  color: #000;
   text-transform: uppercase;
 }
-.infoTitle {
+.largerText {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hugeText {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumBlue {
+  font-size: 21px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
 }
+.largeBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.largerBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-weight: bold;
+}
+.hugeBlue {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+/* ___________________________________________________________ */
 .blockTitle {
+  font-size: 41px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,9 +543,13 @@
 }
 .infoBlog__tag {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .infoBlog__details {
   margin-bottom: 10px;
+}
+.infoBlog__brief {
+  margin-bottom: 7px;
 }
 .software {
   display: -webkit-box;
@@ -343,6 +568,7 @@
   background-color: #e6e6e6;
   height: 20px;
   width: 100%;
+  margin-top: 10px;
 }
 .software__scale-progressed {
   background-color: #3d6cb0;
@@ -371,16 +597,83 @@
 /* --Project Variables --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
+.fontStage1 {
+  font-size: 21px;
+  color: #000;
+}
+.fontStage2 {
+  font-size: 26px;
+  color: #000;
+}
+.fontStage3 {
+  font-size: 41px;
+  color: #000;
+}
+/* ___________________________________________________________ */
+.blueText {
+  color: #3d6cb0;
+}
+.boldText {
+  font-weight: bold;
+}
+.upperText {
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumText {
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
 .largeText {
+  font-size: 26px;
+  color: #000;
   text-transform: uppercase;
 }
-.infoTitle {
+.largerText {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hugeText {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumBlue {
+  font-size: 21px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
 }
+.largeBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.largerBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-weight: bold;
+}
+.hugeBlue {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+/* ___________________________________________________________ */
 .blockTitle {
+  font-size: 41px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,13 +731,21 @@
 }
 .infoBlog__tag {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .infoBlog__details {
   margin-bottom: 10px;
 }
+.infoBlog__brief {
+  margin-bottom: 7px;
+}
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-size: 16px;
+  color: #000;
 }
 .cv {
   max-width: 1400px;
@@ -490,16 +791,83 @@
 /* --Project Variables --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
+.fontStage1 {
+  font-size: 21px;
+  color: #000;
+}
+.fontStage2 {
+  font-size: 26px;
+  color: #000;
+}
+.fontStage3 {
+  font-size: 41px;
+  color: #000;
+}
+/* ___________________________________________________________ */
+.blueText {
+  color: #3d6cb0;
+}
+.boldText {
+  font-weight: bold;
+}
+.upperText {
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumText {
+  font-size: 21px;
+  color: #000;
+  text-transform: uppercase;
+}
 .largeText {
+  font-size: 26px;
+  color: #000;
   text-transform: uppercase;
 }
-.infoTitle {
+.largerText {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hugeText {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+}
+/* ___________________________________________________________ */
+.mediumBlue {
+  font-size: 21px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
 }
+.largeBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+.largerBlue {
+  font-size: 26px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-weight: bold;
+}
+.hugeBlue {
+  font-size: 41px;
+  color: #000;
+  text-transform: uppercase;
+  color: #3d6cb0;
+}
+/* ___________________________________________________________ */
 .blockTitle {
+  font-size: 41px;
+  color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,9 +925,13 @@
 }
 .infoBlog__tag {
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .infoBlog__details {
   margin-bottom: 10px;
+}
+.infoBlog__brief {
+  margin-bottom: 7px;
 }
 @media (max-width: 900px) {
   .content {
@@ -573,6 +945,7 @@
   }
   .infoBlog__date {
     display: block;
+    margin-top: 7px;
   }
 }
 @media (max-width: 1150px) {

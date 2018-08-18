@@ -1,3 +1,4 @@
+@import "./vars.less";
 @media (max-width: 900px) { // 1080 -> 360...
     .content {
         padding-left: 30px;
@@ -7,11 +8,28 @@
             width: 100%;
         }
     }
+    .infoBlog__date {
+        display: block;
+    }
 }
 
 @media (max-width: 1150px) {
     .quantity__item {
         width: calc(16.66% - 6px);
+    }
+    .contactContainer__item {
+        &:nth-child(n) { // or important! is better?..
+            width: 100%;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        &:nth-child(2n-1) {
+            border-bottom: 2px @blue dashed;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
     }
 }
 

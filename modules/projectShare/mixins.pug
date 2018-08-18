@@ -21,7 +21,7 @@ mixin createInfoBlog(blogHeader, date, blogTag, details, headerStyle)
     .infoBlog
         .infoBlog__content
             .infoBlog__brief
-                div(class="infoBlog__header " + headerStyle) #{blogHeader}
-                .infoBlog__date #{date}
+                span(class="infoBlog__header " + headerStyle) #{blogHeader}
+                span.infoBlog__date #{date}
             .infoBlog__tag #{blogTag}
             .infoBlog__details #{details}

@@ -1,7 +1,7 @@
 mixin setGrade(grade)
     - var str = "width: " + grade + "%"
     .software__scale
-    .software__scale.software__scale-explored(style=str)
+    .software__scale.software__scale-progressed(style=str)
 
 mixin setQuantity(val)
     - var maxQuanity = 12
@@ -20,8 +20,8 @@ mixin setTitle(path, title)
 mixin createInfoBlog(blogHeader, date, blogTag, details, headerStyle)
     .infoBlog
         .infoBlog__content
-            .content__brief
+            .infoBlog__brief
                 div(class="infoBlog__header " + headerStyle) #{blogHeader}
                 .infoBlog__date #{date}
-            .content__tag #{blogTag}
-            .content__details #{details}
+            .infoBlog__tag #{blogTag}
+            .infoBlog__details #{details}

@@ -6,7 +6,6 @@
     width: 90%;
     margin-left: -3px;
     margin-right: -3px;
-    margin-top: 5px;
 
     &__item {
         margin-right: 3px;
@@ -19,7 +18,7 @@
             padding-top: 100%;
             background-color :@blue;
             border-radius: 50%;
-            margin-bottom: 5px;
+            margin-bottom: 3px; // space between raws. Vertical margins are consumed together
         }
 
         &-disabled::before {
@@ -27,9 +26,14 @@
         }
     }
 }
-.skills__skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2px;
+.skills {
+    &__skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__description {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }

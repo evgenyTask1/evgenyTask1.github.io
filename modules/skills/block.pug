@@ -2,15 +2,22 @@
     include ../projectShare/mixins
     +setTitle("out/skills/img/icon.png", "Skills")
     .skills
-        .skills__skill Creative
+        .skills__skill
+            .skills__description.largeText Creative
             .skills__quantity.quantity
-               +setQuantity(9)
-        .skills__skill Teamwork
+               +setQuantity(8)
+
+        .skills__skill
+            .skills__description.largeText Teamwork
             .skills__quantity.quantity
                +setQuantity(11)
-        .skills__skill Innovate
+
+        .skills__skill
+            .skills__description.largeText Innovate
             .skills__quantity.quantity
-               +setQuantity(7)
-        .skills__skill Communication
+               +setQuantity(9)
+               
+        .skills__skill
+            .skills__description.largeText Communication
             .skills__quantity.quantity
-                +setQuantity(11)
+                +setQuantity(7)

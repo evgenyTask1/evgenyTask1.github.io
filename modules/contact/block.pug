@@ -1,14 +1,18 @@
 .col__contact
     include ../projectShare/mixins
     +setTitle("out/contact/img/icon.png", "Contact")
-    .cvContact 
-        .cvContact__attributes
-            .cvContact__attribute.infoTitle Address
-            .cvContact__attribute.infoTitle E-mail
-            .cvContact__attribute.infoTitle Phone
-            .cvContact__attribute.infoTitle Website
-        .cvContact__data
-            .cvContact__address Irkutsky Trakt, 37/1
-            .cvContact__e-mail official.trusov.mail@gmail.com
-            .cvContact__phone +7-905-990-45-37
-            .cvContact__webSite www.*.github.io
+    .contactTuples
+        .contactTuples__attributes
+            .contactTuples__attribute.infoTitle Address
+            .contactTuples__attribute.infoTitle E-mail
+            .contactTuples__attribute.infoTitle Phone
+            .contactTuples__attribute.infoTitle Website
+
+        .contactTuples__values
+            .contactTuples__value Tomsk, Irkutsky Trakt.
+            .contactTuples__value official.trusov.mail@gmail.com
+            .contactTuples__value +7-905-990-45-37
+            .contactTuples__value www.*.github.io
+
+
+        

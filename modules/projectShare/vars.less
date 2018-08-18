@@ -3,14 +3,17 @@
 @dark: #000;
 @blue: rgb(61, 108, 176); // (61, 108, 176);
 @grey: rgb(230, 230, 230);
-
 /* ___________________________________________________________ */
 
 /* --Project Mixins and common styles --*/
 
-.infoTitle {
-    color: @blue;
+.largeText {
     text-transform: uppercase;
+}
+
+.infoTitle {
+    .largeText();
+    color: @blue;
 }
 
 .blockTitle {
@@ -18,6 +21,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
     &__line {
         height: 5px;
         background-color: @blue;
@@ -27,7 +32,7 @@
     &__img {
         width: 60px;
         height: auto;
-        margin-right: 25px;
+        margin-right: 15px;
     }
 }
 
@@ -48,4 +53,18 @@
         position: relative;
         top: 3px;
     }
+    &__brief {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__header {
+        margin-right: 10px;
+    }
+    &__tag {
+        text-transform: uppercase;
+    }
+    &__details {
+        margin-bottom: 10px;
+    }
 }
+

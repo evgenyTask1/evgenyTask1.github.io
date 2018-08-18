@@ -1,4 +1,7 @@
 @import "../projectShare/vars.less";
+@scaleHeight: 20px;
+
+
 .software {
     display: flex;
     flex-wrap: wrap;
@@ -7,11 +10,11 @@
     margin-right: -30px;
     &__scale {
         background-color: @grey;
-        height: 20px;
+        height: @scaleHeight;
         width: 100%;
-        &-explored {
+        &-progressed {
             background-color: @blue;
-            margin-top: -20px;
+            margin-top: -@scaleHeight;
         }
     }
 }
@@ -23,4 +26,7 @@
     margin-left: 30px;
     margin-right: 30px;
     width: calc(50% - 60px); 
+    &__technology:not(:first-child) {
+        margin-top: 12px;
+    }
 }

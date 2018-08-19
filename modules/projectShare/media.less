@@ -1,8 +1,61 @@
 @import "./vars.less";
+
+@keyframes showAvatar {
+    0% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes showName {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.6;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showSurname {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.6;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes showTitle {
+    0% {
+        transform: rotateX(180deg);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+
 @media (max-width: 900px) { // 1080 -> 360...
     .content {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 10px;
         &__left, &__right {
             width: 100%;
         }
@@ -14,20 +67,49 @@
         }
         &__box {
             padding-bottom: 70px;
-        }
+        } 
     }
-    
+    .software {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .col {
         justify-content: flex-start;
+        animation: none;
     }
 
-    .cvInfo__outline {
-        transform: translateX(0px);
+    .cvInfo{
+        &__outline {
+            transform: translateX(0px);
+            animation: showAvatar 1.2s cubic-bezier(.11,-1.02,.99,.76) forwards;
+            animation-delay: 0.3s;
+        }
+        &__name {
+            animation: showName 0.7s ease-in-out forwards;
+            animation-delay: 0.15s;
+        }
+        &__surname {
+            animation: showSurname 0.6s ease-in-out forwards;
+            animation-delay: 0.45s;
+        }
+        &__title {
+            animation: showTitle 0.8s ease-in-out forwards;
+            animation-delay: 0.75s;
+        }
     }
 
     .infoBlog__date {
         display: block;
         margin-top: 7px;
+    }
+
+    .blockTitle {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__line {
+            width: 50%;
+            margin-top: 15px;
+        }
     }
 }
 

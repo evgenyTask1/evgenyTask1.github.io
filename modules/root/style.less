@@ -50,10 +50,12 @@ body {
         width: 35.8%;
         margin-top: 89px;
         margin-right: 7.8%;
+        animation: Appear 0.75s linear forwards;
     }
     &__right {
         width: 54%;
         margin-top: 77px;
+        animation: AppearReverse 0.75s linear forwards;
     }
 }
 .col {
@@ -61,4 +63,32 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+}
+
+@keyframes Appear {
+    0% {
+        transform: translateX(-400px) rotateY(120deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-30px) rotateY(65deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0px) rotateY(0deg);
+    }
+}
+
+@keyframes AppearReverse {
+    0% {
+        transform: translateX(400px) rotateY(-120deg);
+        opacity: 0;
+    }
+    66% {
+        transform: translateX(30px) rotateY(-65deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0px) rotateY(0deg);
+    }
 }

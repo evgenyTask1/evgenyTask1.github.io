@@ -162,10 +162,10 @@
   font-size: 25px;
 }
 .cvInfo__avatar {
-  width: 80%;
+  width: 88.3%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -90%;
+  margin-top: -94.15%;
   margin-bottom: 40px;
 }
 .cvInfo__avatar::before {
@@ -176,7 +176,7 @@
   background-color: #3d6cb0;
 }
 .cvInfo__outline {
-  width: 50%;
+  width: 56.07%;
   min-width: 230px;
 }
 .cvInfo__outline::before {
@@ -750,12 +750,13 @@ body {
   color: #000;
   font-family: "MyriadPro";
 }
-.cv {
-  max-width: 1400px;
-  margin: 0 auto;
-}
 .content {
+  max-width: 1240px;
+  margin: 0 auto;
   background-color: #fff;
+  padding-top: 87px;
+}
+.content__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,16 +769,15 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 70px;
-  padding-right: 85px;
-  padding-top: 70px;
-  padding-bottom: 60px;
+  padding-left: 10.08%;
+  padding-right: 4.44%;
+  padding-bottom: 95px;
 }
 .content__left {
-  width: 41%;
+  width: 36.78%;
 }
 .content__right {
-  width: 51%;
+  width: 55.35%;
 }
 .col {
   display: -webkit-box;

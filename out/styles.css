@@ -2,7 +2,7 @@
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
 }
 .fontStage2 {
@@ -25,7 +25,7 @@
 }
 /* ___________________________________________________________ */
 .mediumText {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -47,7 +47,7 @@
 }
 /* ___________________________________________________________ */
 .mediumBlue {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
@@ -88,6 +88,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .blockTitle__line {
   height: 5px;
@@ -116,7 +117,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .infoBlog::before {
   display: block;
@@ -139,6 +140,7 @@
   text-transform: uppercase;
   margin-top: 2px;
   margin-bottom: 7px;
+  letter-spacing: 0.5px;
 }
 .infoBlog__details {
   line-height: 1.15;
@@ -199,6 +201,9 @@
   background-color: #fff;
   border: 1px solid #3d6cb0;
 }
+.col__contact {
+  margin-top: 54px;
+}
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,18 +223,24 @@
 .contactContainer__item:nth-child(2n) {
   width: calc(100% - 130px);
 }
+.col__experience {
+  margin-top: 57px;
+}
+.cvProfile {
+  margin-top: 78px;
+}
 .cvProfile__importantText {
   font-weight: bold;
 }
 .cvProfile__content {
-  margin-top: 8px;
-  line-height: 0.95;
+  margin-top: 11px;
+  line-height: 1.1874;
 }
 /* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
 }
 .fontStage2 {
@@ -252,7 +263,7 @@
 }
 /* ___________________________________________________________ */
 .mediumText {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -274,7 +285,7 @@
 }
 /* ___________________________________________________________ */
 .mediumBlue {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
@@ -315,6 +326,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .blockTitle__line {
   height: 5px;
@@ -343,7 +355,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .infoBlog::before {
   display: block;
@@ -366,6 +378,7 @@
   text-transform: uppercase;
   margin-top: 2px;
   margin-bottom: 7px;
+  letter-spacing: 0.5px;
 }
 .infoBlog__details {
   line-height: 1.15;
@@ -380,7 +393,7 @@
           flex-direction: raw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 78.29%;
+  width: 81%;
   margin-left: -5px;
   margin-right: -5px;
 }
@@ -418,17 +431,18 @@
           align-items: center;
 }
 .skills__description {
-  margin-top: 26px;
-  margin-bottom: 14px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 .col__skills {
+  margin-top: 50px;
   margin-bottom: -3px;
 }
 /* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
 }
 .fontStage2 {
@@ -451,7 +465,7 @@
 }
 /* ___________________________________________________________ */
 .mediumText {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -473,7 +487,7 @@
 }
 /* ___________________________________________________________ */
 .mediumBlue {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
@@ -514,6 +528,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .blockTitle__line {
   height: 5px;
@@ -542,7 +557,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .infoBlog::before {
   display: block;
@@ -565,6 +580,7 @@
   text-transform: uppercase;
   margin-top: 2px;
   margin-bottom: 7px;
+  letter-spacing: 0.5px;
 }
 .infoBlog__details {
   line-height: 1.15;
@@ -579,14 +595,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: -35px;
+  margin-left: -40px;
   margin-right: -35px;
 }
 .software__scale {
   background-color: #e6e6e6;
   height: 22px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .software__scale-progressed {
   background-color: #3d6cb0;
@@ -610,13 +626,16 @@
   width: calc(50% - 2*35px);
 }
 .softCol__technology {
-  margin-top: 28px;
+  margin-top: 20px;
+}
+.col__software {
+  margin-top: 55px;
 }
 /* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
 }
 .fontStage2 {
@@ -639,7 +658,7 @@
 }
 /* ___________________________________________________________ */
 .mediumText {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -661,7 +680,7 @@
 }
 /* ___________________________________________________________ */
 .mediumBlue {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
@@ -702,6 +721,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .blockTitle__line {
   height: 5px;
@@ -730,7 +750,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .infoBlog::before {
   display: block;
@@ -753,6 +773,7 @@
   text-transform: uppercase;
   margin-top: 2px;
   margin-bottom: 7px;
+  letter-spacing: 0.5px;
 }
 .infoBlog__details {
   line-height: 1.15;
@@ -827,7 +848,7 @@ body {
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
 }
 .fontStage2 {
@@ -850,7 +871,7 @@ body {
 }
 /* ___________________________________________________________ */
 .mediumText {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
 }
@@ -872,7 +893,7 @@ body {
 }
 /* ___________________________________________________________ */
 .mediumBlue {
-  font-size: 21px;
+  font-size: 20.5px;
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
@@ -913,6 +934,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .blockTitle__line {
   height: 5px;
@@ -941,7 +963,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .infoBlog::before {
   display: block;
@@ -964,29 +986,53 @@ body {
   text-transform: uppercase;
   margin-top: 2px;
   margin-bottom: 7px;
+  letter-spacing: 0.5px;
 }
 .infoBlog__details {
   line-height: 1.15;
 }
 @media (max-width: 900px) {
   .content {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .content__left,
   .content__right {
     width: 100%;
+  }
+  .content__left {
+    margin-top: 40px;
+  }
+  .content__right {
+    margin-top: 50px;
+  }
+  .content__box {
+    padding-bottom: 70px;
+  }
+  .col {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .cvInfo__outline {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
   }
   .infoBlog__date {
     display: block;
     margin-top: 7px;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
+  .softCol {
+    width: calc(100% - 60px);
+  }
   .quantity__item {
     width: calc(16.66% - 2*5px);
   }
+}
+@media (max-width: 1200px) {
   .contactContainer__item:nth-child(n) {
     width: 100%;
     text-align: center;
@@ -998,10 +1044,5 @@ body {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-  }
-}
-@media (max-width: 1100px) {
-  .softCol {
-    width: calc(100% - 60px);
   }
 }

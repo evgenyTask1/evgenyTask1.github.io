@@ -11,11 +11,12 @@ mixin setQuantity(val)
         else
             .quantity__item.quantity__item-disabled
 
-mixin setTitle(path, title, shiftLeft, shiftDown)
+mixin setTitle(path, title, shiftLeft, shiftDown, lineToLeft, textToLeft)
     - var str = "margin-left: " + shiftLeft + "px" + " ; margin-bottom: " + shiftDown + "px"
+    - var str2 = "margin-right: " + lineToLeft + "px" + " ; margin-left: " + textToLeft + "px"
     .blockTitle(style=str) 
         img.blockTitle__img(src=path)
-        .blockTitle__header #{title}
+        .blockTitle__header(style=str2) #{title}
         .blockTitle__line
 
 mixin createInfoBlog(blogHeader, date, blogTag, details, headerStyle)

@@ -6,13 +6,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -@space;
+    margin-left: -@space - 5px;
     margin-right: -@space;
     &__scale {
         background-color: @grey;
         height: @scaleHeight;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 15px;
         &-progressed {
             background-color: @blue;
             margin-top: -@scaleHeight;
@@ -28,6 +28,10 @@
     margin-right: @space;
     width: calc(50% - 2*@space); 
     &__technology {
-        margin-top: 28px;
+        margin-top: 20px;
     } 
+}
+
+.col__software {
+    margin-top: 55px;
 }

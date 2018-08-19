@@ -1,9 +1,10 @@
 @import "../projectShare/vars.less";
+@circleRowSpace: 3px;
 .quantity {
     display: flex;
     flex-direction: raw;
     flex-wrap: wrap;
-    width: 90%;
+    width: 78.29%;
     margin-left: -@circleSpace;
     margin-right: -@circleSpace;
 
@@ -18,7 +19,7 @@
             padding-top: 100%;
             background-color :@blue;
             border-radius: 50%;
-            margin-bottom: 3px; // space between raws. Vertical margins are consumed together
+            margin-bottom: @circleRowSpace; // space between raws. Vertical margins are consumed together
         }
 
         &-disabled::before {
@@ -27,13 +28,18 @@
     }
 }
 .skills {
+    margin-top: 51px;
     &__skill {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &__description {
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 26px;
+        margin-bottom: 14px;
     }
+}
+
+.col__skils {
+    margin-bottom: -@circleRowSpace;
 }

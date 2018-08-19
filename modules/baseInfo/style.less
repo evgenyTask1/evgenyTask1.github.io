@@ -1,5 +1,11 @@
 @import "../projectShare/vars.less";
 .cvInfo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
     &__name {
         font-size: 52px;
     }
@@ -9,9 +15,7 @@
     &__title {
         font-size: 25px;
     }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     &__avatar {
         width: 88.3%;
         margin-left: auto;
@@ -24,11 +28,11 @@
             border-radius: 50%;
             background-color: @blue;
         }
-        margin-bottom: 40px;
     }
     &__outline {
         width: 56.07%;
         min-width: 230px;
+        margin-bottom: 35px;
         &::before {
             content: "";
             display: block;

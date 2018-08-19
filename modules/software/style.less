@@ -1,18 +1,18 @@
 @import "../projectShare/vars.less";
-@scaleHeight: 20px;
-
+@scaleHeight: 22px;
+@space: 35px;
 
 .software {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: -@space;
+    margin-right: -@space;
     &__scale {
         background-color: @grey;
         height: @scaleHeight;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 20px;
         &-progressed {
             background-color: @blue;
             margin-top: -@scaleHeight;
@@ -24,10 +24,10 @@
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
-    margin-left: 30px;
-    margin-right: 30px;
-    width: calc(50% - 60px); 
-    &__technology:not(:first-child) {
-        margin-top: 12px;
-    }
+    margin-left: @space;
+    margin-right: @space;
+    width: calc(50% - 2*@space); 
+    &__technology {
+        margin-top: 28px;
+    } 
 }

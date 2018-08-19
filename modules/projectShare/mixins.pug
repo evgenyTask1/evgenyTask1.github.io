@@ -11,8 +11,9 @@ mixin setQuantity(val)
         else
             .quantity__item.quantity__item-disabled
 
-mixin setTitle(path, title)
-    .blockTitle 
+mixin setTitle(path, title, shiftLeft, shiftDown)
+    - var str = "margin-left: " + shiftLeft + "px" + " ; margin-bottom: " + shiftDown + "px"
+    .blockTitle(style=str) 
         img.blockTitle__img(src=path)
         .blockTitle__header #{title}
         .blockTitle__line

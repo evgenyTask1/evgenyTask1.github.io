@@ -1,8 +1,10 @@
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 @mainColor: #fff;
 @dark: #000;
-@blue: rgb(61, 108, 176); // (61, 108, 176);
+@blue: rgb(61, 108, 176); 
 @grey: rgb(230, 230, 230);
+
+@circleSpace: 5px; // in skills
 /* ___________________________________________________________ */
 
 /* --Project Mixins and common styles --*/
@@ -28,7 +30,7 @@
     color: @blue;
 }
 .boldText {
-    font-weight: bold;
+    font-family: "MyriadPro-Bold";
 }
 .upperText {
     text-transform: uppercase;
@@ -108,7 +110,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    align-items: flex-start;
     &::before {
         display: block;
         content: "";
@@ -119,7 +120,7 @@
         background-color: @dark;
         border-radius: 50%;
         position: relative;
-        top: 3px;
+        top: 7px;
     }
     &__header {
         margin-right: 10px;

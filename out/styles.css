@@ -1,4 +1,4 @@
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
@@ -18,7 +18,7 @@
   color: #3d6cb0;
 }
 .boldText {
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .upperText {
   text-transform: uppercase;
@@ -38,7 +38,7 @@
   font-size: 26px;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeText {
   font-size: 41px;
@@ -63,7 +63,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeBlue {
   font-size: 41px;
@@ -77,7 +77,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,9 +113,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .infoBlog::before {
   display: block;
@@ -128,7 +125,7 @@
   background-color: #000;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 7px;
 }
 .infoBlog__header {
   margin-right: 10px;
@@ -213,7 +210,7 @@
 .cvProfile__importantTxt {
   font-weight: bold;
 }
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
@@ -233,7 +230,7 @@
   color: #3d6cb0;
 }
 .boldText {
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .upperText {
   text-transform: uppercase;
@@ -253,7 +250,7 @@
   font-size: 26px;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeText {
   font-size: 41px;
@@ -278,7 +275,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeBlue {
   font-size: 41px;
@@ -292,7 +289,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,9 +325,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .infoBlog::before {
   display: block;
@@ -343,7 +337,7 @@
   background-color: #000;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 7px;
 }
 .infoBlog__header {
   margin-right: 10px;
@@ -369,15 +363,15 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90%;
-  margin-left: -3px;
-  margin-right: -3px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .quantity__item {
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(8.33% - 6px);
+  width: calc(8.33% - 2*5px);
 }
 .quantity__item::before {
   content: " ";
@@ -406,7 +400,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
@@ -426,7 +420,7 @@
   color: #3d6cb0;
 }
 .boldText {
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .upperText {
   text-transform: uppercase;
@@ -446,7 +440,7 @@
   font-size: 26px;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeText {
   font-size: 41px;
@@ -471,7 +465,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeBlue {
   font-size: 41px;
@@ -485,7 +479,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,9 +515,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .infoBlog::before {
   display: block;
@@ -536,7 +527,7 @@
   background-color: #000;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 7px;
 }
 .infoBlog__header {
   margin-right: 10px;
@@ -594,7 +585,7 @@
 .softCol__technology:not(:first-child) {
   margin-top: 12px;
 }
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
@@ -614,7 +605,7 @@
   color: #3d6cb0;
 }
 .boldText {
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .upperText {
   text-transform: uppercase;
@@ -634,7 +625,7 @@
   font-size: 26px;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeText {
   font-size: 41px;
@@ -659,7 +650,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeBlue {
   font-size: 41px;
@@ -673,7 +664,7 @@
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,9 +700,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .infoBlog::before {
   display: block;
@@ -724,7 +712,7 @@
   background-color: #000;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 7px;
 }
 .infoBlog__header {
   margin-right: 10px;
@@ -739,6 +727,20 @@
 .infoBlog__brief {
   margin-bottom: 7px;
 }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('fonts/MyriadPro-Regular.eot');
+  src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('fonts/MyriadPro-Bold.eot');
+  src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -746,6 +748,7 @@
 body {
   font-size: 16px;
   color: #000;
+  font-family: "MyriadPro";
 }
 .cv {
   max-width: 1400px;
@@ -788,7 +791,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/* --Project Variables --*/
+/* --Project Variables (used in 1+ files --*/
 /* ___________________________________________________________ */
 /* --Project Mixins and common styles --*/
 .fontStage1 {
@@ -808,7 +811,7 @@ body {
   color: #3d6cb0;
 }
 .boldText {
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .upperText {
   text-transform: uppercase;
@@ -828,7 +831,7 @@ body {
   font-size: 26px;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeText {
   font-size: 41px;
@@ -853,7 +856,7 @@ body {
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
 }
 .hugeBlue {
   font-size: 41px;
@@ -867,7 +870,7 @@ body {
   color: #000;
   text-transform: uppercase;
   color: #3d6cb0;
-  font-weight: bold;
+  font-family: "MyriadPro-Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,9 +906,6 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 .infoBlog::before {
   display: block;
@@ -918,7 +918,7 @@ body {
   background-color: #000;
   border-radius: 50%;
   position: relative;
-  top: 3px;
+  top: 7px;
 }
 .infoBlog__header {
   margin-right: 10px;
@@ -950,7 +950,7 @@ body {
 }
 @media (max-width: 1150px) {
   .quantity__item {
-    width: calc(16.66% - 6px);
+    width: calc(16.66% - 2*5px);
   }
   .contactContainer__item:nth-child(n) {
     width: 100%;

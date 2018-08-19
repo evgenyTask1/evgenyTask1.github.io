@@ -4,14 +4,14 @@
     flex-direction: raw;
     flex-wrap: wrap;
     width: 90%;
-    margin-left: -3px;
-    margin-right: -3px;
+    margin-left: -@circleSpace;
+    margin-right: -@circleSpace;
 
     &__item {
-        margin-right: 3px;
-        margin-left: 3px;
+        margin-right: @circleSpace;
+        margin-left: @circleSpace;
         box-sizing: border-box;
-        width: calc(8.33% - 6px);
+        width: calc(8.33% - 2*@circleSpace);
         &::before {
             content: " ";
             display: block;

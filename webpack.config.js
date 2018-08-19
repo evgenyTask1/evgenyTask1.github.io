@@ -2,6 +2,7 @@ const sync = require("browser-sync-webpack-plugin");
 const path = require("path");
 const prefixer = require('autoprefixer');
 const extractCss = require("extract-text-webpack-plugin");
+const extractHTML = require('html-webpack-plugin');
 
 let devModeSettings = { //seems doesn't affect except url
     cssOptions: {
@@ -27,7 +28,11 @@ let config = {
             open: false,
             files: ["./*.html"]
         }),
-        new extractCss("styles.css")
+        new extractCss("styles.css"),
+        new extractHTML({
+            filename: "../index-IE.html",
+            template: "./modules/root/index.pug"
+        })
     ],
     module: {
         rules: [
@@ -52,7 +57,7 @@ let config = {
                         ]})
             },
             {
-                test: /\.(?:png|jpe?g|gif|tiff)$/, // assets/* -> out/*
+                test: /\.(?:png|jpe?g|gif|tiff)$/, 
                 use:
                  [
                     {
@@ -60,6 +65,18 @@ let config = {
                         options: {
                             regExp: /modules(.*)/, 
                             name: '[1]' 
+                        }
+                    } 
+                ]
+            },
+            {
+                test: /\.(?:eot|svg|ttf|woff)$/, 
+                use:
+                 [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "fonts/[name].[ext]"
                         }
                     } 
                 ]
